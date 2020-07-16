@@ -112,11 +112,23 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubItems\DivMng.cs">
+    <Compile Include="SubItems\MemberMngForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubItems\DivMng.Designer.cs">
-      <DependentUpon>DivMng.cs</DependentUpon>
+    <Compile Include="SubItems\MemberMngForm.Designer.cs">
+      <DependentUpon>MemberMngForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubItems\BooksMngForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubItems\BooksMngForm.Designer.cs">
+      <DependentUpon>BooksMngForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubItems\DivMngForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubItems\DivMngForm.Designer.cs">
+      <DependentUpon>DivMngForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SubItems\LoginForm.cs">
       <SubType>Form</SubType>
@@ -129,8 +141,14 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubItems\DivMng.resx">
-      <DependentUpon>DivMng.cs</DependentUpon>
+    <EmbeddedResource Include="SubItems\MemberMngForm.resx">
+      <DependentUpon>MemberMngForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubItems\BooksMngForm.resx">
+      <DependentUpon>BooksMngForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubItems\DivMngForm.resx">
+      <DependentUpon>DivMngForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubItems\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

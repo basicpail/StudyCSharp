@@ -31,8 +31,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.관리MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuItemCodeMng = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuItemBooksMng = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.MnuItemExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuItemMemberMng = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +53,8 @@
             // 
             this.관리MToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnuItemCodeMng,
+            this.MnuItemBooksMng,
+            this.MnuItemMemberMng,
             this.toolStripMenuItem1,
             this.MnuItemExit});
             this.관리MToolStripMenuItem.Name = "관리MToolStripMenuItem";
@@ -61,8 +65,15 @@
             // 
             this.MnuItemCodeMng.Name = "MnuItemCodeMng";
             this.MnuItemCodeMng.Size = new System.Drawing.Size(180, 22);
-            this.MnuItemCodeMng.Text = "코드 관리";
+            this.MnuItemCodeMng.Text = "코드 관리(&C)";
             this.MnuItemCodeMng.Click += new System.EventHandler(this.MnuItemCodeMng_Click);
+            // 
+            // MnuItemBooksMng
+            // 
+            this.MnuItemBooksMng.Name = "MnuItemBooksMng";
+            this.MnuItemBooksMng.Size = new System.Drawing.Size(180, 22);
+            this.MnuItemBooksMng.Text = "도서 관리(&B)";
+            this.MnuItemBooksMng.Click += new System.EventHandler(this.MnuItemBooksMng_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -76,6 +87,13 @@
             this.MnuItemExit.Size = new System.Drawing.Size(180, 22);
             this.MnuItemExit.Text = "종료(&X)";
             this.MnuItemExit.Click += new System.EventHandler(this.MnuItemExit_Click);
+            // 
+            // MnuItemMemberMng
+            // 
+            this.MnuItemMemberMng.Name = "MnuItemMemberMng";
+            this.MnuItemMemberMng.Size = new System.Drawing.Size(180, 22);
+            this.MnuItemMemberMng.Text = "멤버 관리(&D)";
+            this.MnuItemMemberMng.Click += new System.EventHandler(this.MnuItemMemberMng_Click);
             // 
             // MainForm
             // 
@@ -104,6 +122,8 @@
         private System.Windows.Forms.ToolStripMenuItem MnuItemCodeMng;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem MnuItemExit;
+        private System.Windows.Forms.ToolStripMenuItem MnuItemBooksMng;
+        private System.Windows.Forms.ToolStripMenuItem MnuItemMemberMng;
     }
 }
 
