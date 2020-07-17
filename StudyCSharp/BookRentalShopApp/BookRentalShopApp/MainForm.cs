@@ -20,6 +20,9 @@ namespace BookRentalShopApp
             login.ShowDialog();
         }
 
+        #region
+        #endregion
+
         private void menuStrip1_ItemClicked(object sender, System.Windows.Forms.ToolStripItemClickedEventArgs e)
         {
 
@@ -71,6 +74,12 @@ namespace BookRentalShopApp
         {
             MemberMngForm form = new MemberMngForm();
             ShowFormControl(form, "멤버 관리");
+        }
+
+        private void MnuItemRentalMng_Click(object sender, EventArgs e)
+        {
+            RentalMngForm form = new RentalMngForm();
+            ShowFormControl(form, "대여 관리");
         }
     }
 }

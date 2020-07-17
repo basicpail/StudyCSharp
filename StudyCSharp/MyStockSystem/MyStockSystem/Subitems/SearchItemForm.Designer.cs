@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchItemForm));
-            this.MtlBack = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.TxtSearchItem = new MetroFramework.Controls.MetroTextBox();
             this.BtlButton = new MetroFramework.Controls.MetroButton();
             this.DgvSearchItems = new System.Windows.Forms.DataGridView();
-            this.isin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.issuDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.secnKacdNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KorSecnNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shotnIsin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.MtlBack = new MetroFramework.Controls.MetroTile();
+            this.shotnIsin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KorSecnNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.secnKacdNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.issuDt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -50,18 +50,6 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSearchItems)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MtlBack
-            // 
-            this.MtlBack.Location = new System.Drawing.Point(1197, 657);
-            this.MtlBack.Name = "MtlBack";
-            this.MtlBack.Size = new System.Drawing.Size(59, 40);
-            this.MtlBack.Style = MetroFramework.MetroColorStyle.Teal;
-            this.MtlBack.TabIndex = 1;
-            this.MtlBack.TileImage = global::MyStockSystem.Properties.Resources.back2;
-            this.MtlBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MtlBack.UseTileImage = true;
-            this.MtlBack.Click += new System.EventHandler(this.MtlBack_Click);
             // 
             // metroTabControl1
             // 
@@ -102,12 +90,11 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.DgvSearchItems);
             this.splitContainer1.Size = new System.Drawing.Size(1226, 548);
-            this.splitContainer1.SplitterDistance = 274;
             this.splitContainer1.TabIndex = 2;
             // 
             // TxtSearchItem
             // 
-            this.TxtSearchItem.Location = new System.Drawing.Point(823, 3);
+            this.TxtSearchItem.Location = new System.Drawing.Point(821, 3);
             this.TxtSearchItem.Name = "TxtSearchItem";
             this.TxtSearchItem.Size = new System.Drawing.Size(268, 44);
             this.TxtSearchItem.TabIndex = 1;
@@ -138,39 +125,9 @@
             this.DgvSearchItems.Location = new System.Drawing.Point(0, 0);
             this.DgvSearchItems.Name = "DgvSearchItems";
             this.DgvSearchItems.RowTemplate.Height = 23;
-            this.DgvSearchItems.Size = new System.Drawing.Size(1226, 270);
+            this.DgvSearchItems.Size = new System.Drawing.Size(1226, 494);
             this.DgvSearchItems.TabIndex = 0;
             this.DgvSearchItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvSearchItems_CellContentClick);
-            // 
-            // isin
-            // 
-            this.isin.FillWeight = 200F;
-            this.isin.HeaderText = "표준코드";
-            this.isin.Name = "isin";
-            // 
-            // issuDt
-            // 
-            this.issuDt.FillWeight = 200F;
-            this.issuDt.HeaderText = "주식발행일자";
-            this.issuDt.Name = "issuDt";
-            // 
-            // secnKacdNm
-            // 
-            this.secnKacdNm.HeaderText = "보통주/우선주";
-            this.secnKacdNm.Name = "secnKacdNm";
-            this.secnKacdNm.Width = 150;
-            // 
-            // KorSecnNm
-            // 
-            this.KorSecnNm.HeaderText = "한글종목명";
-            this.KorSecnNm.Name = "KorSecnNm";
-            this.KorSecnNm.Width = 300;
-            // 
-            // shotnIsin
-            // 
-            this.shotnIsin.HeaderText = "단축코드";
-            this.shotnIsin.Name = "shotnIsin";
-            this.shotnIsin.Width = 200;
             // 
             // metroTabPage2
             // 
@@ -181,6 +138,48 @@
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "해당정보수집";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
+            // 
+            // MtlBack
+            // 
+            this.MtlBack.Location = new System.Drawing.Point(1197, 657);
+            this.MtlBack.Name = "MtlBack";
+            this.MtlBack.Size = new System.Drawing.Size(59, 40);
+            this.MtlBack.Style = MetroFramework.MetroColorStyle.Teal;
+            this.MtlBack.TabIndex = 1;
+            this.MtlBack.TileImage = global::MyStockSystem.Properties.Resources.back2;
+            this.MtlBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MtlBack.UseTileImage = true;
+            this.MtlBack.Click += new System.EventHandler(this.MtlBack_Click);
+            // 
+            // shotnIsin
+            // 
+            this.shotnIsin.HeaderText = "단축코드";
+            this.shotnIsin.Name = "shotnIsin";
+            this.shotnIsin.Width = 200;
+            // 
+            // KorSecnNm
+            // 
+            this.KorSecnNm.HeaderText = "한글종목명";
+            this.KorSecnNm.Name = "KorSecnNm";
+            this.KorSecnNm.Width = 300;
+            // 
+            // secnKacdNm
+            // 
+            this.secnKacdNm.HeaderText = "보통주/우선주";
+            this.secnKacdNm.Name = "secnKacdNm";
+            this.secnKacdNm.Width = 150;
+            // 
+            // issuDt
+            // 
+            this.issuDt.FillWeight = 200F;
+            this.issuDt.HeaderText = "주식발행일자";
+            this.issuDt.Name = "issuDt";
+            // 
+            // isin
+            // 
+            this.isin.FillWeight = 200F;
+            this.isin.HeaderText = "표준코드";
+            this.isin.Name = "isin";
             // 
             // SearchItemForm
             // 

@@ -37,5 +37,15 @@ namespace MyStockSystem
 
             this.Close();
         }
+
+        private void MtlGuide_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            GuideForm form = new GuideForm();
+            form.Location = this.Location;
+            form.ShowDialog();
+
+            this.Close();
+        }
     }
 }
